@@ -10,11 +10,11 @@ class LogInScreen extends StatefulWidget {
 }
 
 class _LogInScreenState extends State<LogInScreen> {
-  bool _hideUserPassword = false;
+  bool _showUserPassword = false;
 
-  void _toogleHideUserPassword() {
+  void _toogleShowUserPassword() {
     setState(() {
-      _hideUserPassword = !_hideUserPassword;
+      _showUserPassword = !_showUserPassword;
     });
   }
 
@@ -47,6 +47,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   icon: const Icon(Icons.email_outlined),
                 ),
                 keyboardType: TextInputType.emailAddress,
+                autofocus: true,
               ),
               SizedBox(
                 height: 20.0,
@@ -57,15 +58,15 @@ class _LogInScreenState extends State<LogInScreen> {
                   icon: const Icon(Icons.lock_open_outlined),
                   suffixIcon: IconButton(
                     icon: Icon(
-                      _hideUserPassword
-                          ? Icons.visibility_off_outlined
-                          : Icons.visibility_outlined,
+                      _showUserPassword
+                          ? Icons.visibility_outlined
+                          : Icons.visibility_off_outlined,
                     ),
-                    onPressed: _toogleHideUserPassword,
+                    onPressed: _toogleShowUserPassword,
                   ),
                 ),
                 keyboardType: TextInputType.visiblePassword,
-                obscureText: _hideUserPassword,
+                obscureText: !_showUserPassword,
               ),
               SizedBox(
                 height: 35.0,

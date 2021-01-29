@@ -1,4 +1,3 @@
-// import 'package:family_budgete/helpers/custom_page_transition.dart';
 import 'package:flutter/material.dart';
 
 import 'package:family_budgete/screens/log_in_screen.dart';
