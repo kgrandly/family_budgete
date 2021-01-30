@@ -13,6 +13,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Family Budgete'),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Padding(

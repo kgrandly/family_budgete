@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:family_budgete/screens/log_in_screen.dart';
-import 'package:family_budgete/screens/sign_up_screen.dart';
+import './screens/log_in_screen.dart';
+import './screens/sign_up_screen.dart';
 
 void main() {
   runApp(MyApp());

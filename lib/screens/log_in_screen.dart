@@ -23,6 +23,7 @@ class _LogInScreenState extends State<LogInScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Family Budgete'),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Padding(
